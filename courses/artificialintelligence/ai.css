@@ -1,0 +1,4 @@
+
+.levels .objectiveCard:nth-child(3) {
+	border-top-right-radius: 0 !important;
+}

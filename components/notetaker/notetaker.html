@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quick Notes</title>
+	<link rel="stylesheet" href="/components/notetaker/notetaker.css">
+</head>
+<body>
+<!-- header -->
+	<header>
+		<h1>Quick Notes</h1>
+		<div>
+			<button class="addNoteBtn" onclick="openNoteDialog()">+ Add Note</button>
+			<button id="themeToggleBtn" class="themeToggleBtn">🌙</button>
+		</div>
+	</header>
+<!-- main -->
+	<main class="notesGrid" id="notesContainer">
+
+	</main>
+<!-- dialog -->
+	<dialog id="noteDialog">
+		<div class="dialogContent">
+			<div class="dialogHeader">
+				<h2 class="dialogTitle" id="dialogTitle">Add New Note</h2>
+				<button class="closeBtn" onclick="closeNoteDialog()"></button>
+			</div>
+
+			<form id="noteForm">
+				<div class="formGroup">
+					<label for="noteTitle" class="fromLabel">Title</label>
+					<input type="text" id="noteTitle" placeholder="Enter note title..." required>
+				</div>
+
+				<div class="formGroup">
+					<label for="noteContent" class="formLabel">Content</label>
+					<textarea id="noteContent" class="formTextarea" placeholder="Write your note here..." required></textarea>
+				</div>
+
+				<div class="dialogActions">
+					<button type="button" class="cancelBtn" onclick="closeNoteDialog()">Cancel</button>
+					<button type="submit" class="saveBtn" onclick="closeNoteDialog()">Save Note</button>
+				</div>
+			</form>
+		</div>
+	</dialog>
+
+
+	<script src="/components/notetaker/notetaker.js"></script>
+</body>
+</html>

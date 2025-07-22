@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+	--bg-white-800: #e7e7e7;
+	--bg-white-900: #ffffff;
+	--bg-transparent: #2c2d2688;
+	--bg-transparent-1: #00000088;
+	--bg-transparent-2: #0000000f;
+	--bg-black-700: #2c2d26;
+	--bg-orange: #F25D27;
+	--text-span: #8fb000;
+	--text-white-800: #e7e7e7;
+	--text-black-700: #2c2d26;
+	--text-gray: #747474;
+	--text-gray-1: #535b18;
+	--font-size-8: 8px;
+	--font-size-12: 12px;
+	--font-size-14: 14px;
+	--font-size-16: 16px;
+	--font-size-18: 18px;
+	--font-size-24: 24px;
+	--font-size-32: 32px;
+	--font-size-48: 48px;
+	--font-size-18em: 18em;
+	--font-size-8em: 8em;
+	--font-size-6em: 6em;
+}
+
+body {
+	/* background: var(--bg-white-800) !important; */
+	margin: 0;
+	padding: 0;
+}
+
+/* vedio */
+
+.introVideo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	padding: 20px 0;
+	/* border: 1px solid red; */
+	background: var(--bg-black-700);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.noteTaker {
+	position: sticky;
+	bottom: 20px;
+	left: 1450px;
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+	border-radius: 50%;
+	background: var(--bg-black-700);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease-in-out;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.noteTaker .fa {
+	color: var(--text-white-800);
+	font-size: var(--font-size-18);
+}
+
+.noteTaker:hover {
+	box-shadow: none;
+	background: var(--text-gray);
+}
+
+/* Specificity */
+
+.specificitySection {
+	background: var(--bg-black-700);
+	text-align: center;
+	z-index: 1;
+}
+
+.sectionTitle {
+	font-size: var(--font-size-32);
+	padding-top: 40px;
+}
+
+.sectionTitle h2 {
+	font-size: var(--font-size-32);
+}
+
+.objectives {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	color: var(--text-white-800);
+	/* background: var(--bg-white-800); */
+	margin: 20px;
+	padding: 20px;
+}
+
+.globalCard {
+	padding: 15px;
+	background: transparent;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(100px);
+	color: var(--text-black-700);
+	width: 40%;
+	height: 25vh;
+	text-align: center;
+	transition: 0.3s ease-in-out;
+	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+.globalCard img {
+	padding: 5px;
+	width: 50px;
+	margin: 10px;
+
+}
+
+.globalCard h2 {
+	margin-bottom: 10px;
+}
+
+.globalCard:hover {
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.8);
+	color: var(--text-white-800);
+	background: transparent;
+	/* border: none; */
+}
+
+
+/* Course Module - Optional */
+
+.modules {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2em;
+	border: 2px solid red;
+	margin: 5px;
+}
+
+.module {
+	width: 100%;
+	margin: 10px;
+	border: 2px solid red;
+	padding: 25px;
+}
+
+.module .fa {
+	padding: 0 10px;
+}
+
+.expanded {
+	/* margin-top: 100%; */
+}
+
+.details {
+	display: none;
+	margin: 0 80px;
+}

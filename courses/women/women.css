@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+	--bg-white-800: #e7e7e7;
+	--bg-white-900: #ffffff;
+	--bg-transparent: #2c2d2688;
+	--bg-transparent-1: #00000088;
+	--bg-transparent-2: #0000000f;
+	--bg-black-700: #2c2d26;
+	--bg-orange: #F25D27;
+	--text-span: #8fb000;
+	--text-white-800: #e7e7e7;
+	--text-black-700: #2c2d26;
+	--text-gray: #747474;
+	--text-gray-1: #535b18;
+	--font-size-8: 8px;
+	--font-size-12: 12px;
+	--font-size-14: 14px;
+	--font-size-16: 16px;
+	--font-size-18: 18px;
+	--font-size-24: 24px;
+	--font-size-32: 32px;
+	--font-size-48: 48px;
+	--font-size-18em: 18em;
+	--font-size-8em: 8em;
+	--font-size-6em: 6em;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* vedio */
+/* 
+.introVideo {
+
+} */
+
+
+/* Specificity */
+
+.specificitySection {
+	/* background: var(--bg-white-800); */
+	text-align: center;
+}
+
+.sectionTitle {
+	font-size: var(--font-size-32);
+	padding: 20px;
+}
+
+.women {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 20px;
+	padding: 20px;
+	background: transparent;
+}
+
+.womenCard {
+	padding: 15px;
+	width: 40% !important;
+	height: 25vh;
+	text-align: center;
+	background: transparent;
+	position: relative;
+	z-index: 1;
+	color: var(--text-gray) !important;
+}
+
+.women::before {
+	content: '';
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background: #ae1616;
+	z-index: 1;
+	border-radius: 100%;
+	transition: all .5s ease-in-out;
+	opacity: 0.2;
+}
+
+.women:hover.women::before {
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 1);
+	width: 650px;
+	height: 650px;
+	background: #67b507;
+	opacity: 0.6;
+}
+
+.womenCard img {
+	padding: 5px;
+	width: 50px;
+	margin: 10px;
+	z-index: -1;
+}
+
+.womenCard h2 {
+	margin-bottom: 10px;
+	z-index: 1;
+}
+
+
+.womenCard:hover {
+	color: var(--text-white-800) !important;
+}
+
+
+/* Course Module */
+
+.womenModule {
+	margin: 5em;
+	max-height: 100%;
+	border: 2px solid red;
+}
+
+.womenModule .sectionTitle {
+	text-align: center;
+	border: 2px solid red;
+	margin: 5px;
+}
+
+.modules {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2em;
+	border: 2px solid red;
+	margin: 5px;
+}
+
+.module {
+	width: 100%;
+	margin: 10px;
+	border: 2px solid red;
+	padding: 25px;
+}
+
+.module .fa {
+	padding: 0 10px;
+}
+
+.expanded {
+	background: var(--text-gray);
+}
+
+.details {
+	display: none;
+	margin: 0 80px;
+}

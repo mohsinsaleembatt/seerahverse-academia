@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Check Page</title>
+	<link rel="stylesheet" href="/check/check.css">
+</head>
+<body>
+	<div class="card">
+		<h3>Article Title</h3>
+		<div class="text" id="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id turpis nec purus fringilla aliquam. Donec
+			dignissim...
+			<span class="extra-text">
+				Curabitur venenatis, massa in efficitur dapibus, nisi nulla finibus erat, vel cursus velit neque ac nulla. Integer
+				sit amet suscipit nisl. Praesent a arcu lorem.
+			</span>
+		</div>
+		<button id="toggleBtn">Read More</button>
+	</div>
+<script src="/check/check.js"></script>
+</body>
+</html>
+
+<!-- ========================================================== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Notes Popup</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Popup base */
+		.popup {
+			position: fixed;
+			bottom: 20px;
+			left: 20px;
+			width: 300px;
+			height: 200px;
+			background: white;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			padding: 10px;
+			z-index: 1000;
+			display: flex;
+			flex-direction: column;
+			transition: transform 0.3s ease;
+		}
+
+		/* Hidden state */
+		.hidden {
+			display: none;
+		}
+
+		/* Header with close button */
+		.popup-header {
+			display: flex;
+			justify-content: space-between;
+			font-weight: bold;
+			margin-bottom: 8px;
+		}
+
+		.popup-header button {
+			background: none;
+			border: none;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+		/* Textarea styling */
+		.popup textarea {
+			flex-grow: 1;
+			resize: none;
+			width: 100%;
+			height: 100%;
+			padding: 8px;
+			font-size: 14px;
+			border-radius: 5px;
+			border: 1px solid #aaa;
+		}
+
+		/* Toggle button */
+		#togglePopup {
+			position: fixed;
+			bottom: 240px;
+			left: 20px;
+			padding: 10px 15px;
+			background-color: #007bff;
+			color: white;
+			border: none;
+			border-radius: 6px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+
+		#togglePopup:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+
+<body>
+
+	<button id="togglePopup">📝 Take Notes</button>
+
+	<div id="popup" class="popup hidden">
+		<div class="popup-header">
+			<span>My Notes</span>
+			<button id="closePopup">&times;</button>
+		</div>
+		<textarea placeholder="Write your notes here..."></textarea>
+	</div>
+
+	<script>
+		const popup = document.getElementById("popup");
+		const toggleBtn = document.getElementById("togglePopup");
+		const closeBtn = document.getElementById("closePopup");
+
+		toggleBtn.addEventListener("click", () => {
+			popup.classList.toggle("hidden");
+		});
+
+		closeBtn.addEventListener("click", () => {
+			popup.classList.add("hidden");
+		});
+	</script>
+
+</body>
+
+</html> -->

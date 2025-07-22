@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+	--bg-white-800: #e7e7e7;
+	--bg-white-900: #ffffff;
+	--bg-transparent: #2c2d2688;
+	--bg-transparent-1: #00000088;
+	--bg-transparent-2: #0000000f;
+	--bg-black-700: #2c2d26;
+	--bg-orange: #F25D27;
+	--text-span: #8fb000;
+	--text-white-800: #e7e7e7;
+	--text-black-700: #2c2d26;
+	--text-gray: #747474;
+	--text-gray-1: #535b18;
+	--font-size-8: 8px;
+	--font-size-12: 12px;
+	--font-size-14: 14px;
+	--font-size-16: 16px;
+	--font-size-18: 18px;
+	--font-size-24: 24px;
+	--font-size-32: 32px;
+	--font-size-48: 48px;
+	--font-size-18em: 18em;
+	--font-size-8em: 8em;
+	--font-size-6em: 6em;
+}
+
+body {
+	background: var(--bg-black-700) !important;
+	margin: 0;
+	padding: 0;
+}
+
+/* vedio */
+/* 
+.introVideo {
+
+} */
+
+.objectives {
+	position: relative;
+	gap: -2px;
+}
+
+.objectives::before {
+	content: '';
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 400px;
+	z-index: 1;
+	border-radius: 100%;
+	background: #ae1616;
+	/* -webkit-backdrop-filter: brightness(100px);
+	backdrop-filter: brighness(100px); */
+	transition: all .5s ease-in-out;
+}
+
+.objectives:hover.objectives::before {
+	width: 350px;
+	height: 350px;
+	background: #67b507;
+}
+
+.objectiveCard {
+	width: 40% !important;
+	text-align: start;
+	padding: 40px;
+	background: transparent;
+	z-index: 1;
+	color: var(--text-gray);
+}
+
+.objectiveCard:nth-child(1) {
+	border-bottom-right-radius: 50px;
+}
+
+.objectiveCard:nth-child(1):hover {
+	border-bottom-right-radius: 50px;
+}
+
+.objectiveCard:nth-child(2) {
+	border-bottom-left-radius: 50px;
+}
+
+.objectiveCard:nth-child(3) {
+	border-top-right-radius: 50px;
+}
+
+.objectiveCard:nth-child(4) {
+	border-top-left-radius: 50px;
+}
+
+.objectiveCard h2 {
+	text-align: center;
+	font-size: var(--font-size-24);
+}
+
+.objectiveCard ul {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 20px 30px;
+	gap: 5px;
+	z-index: 1;
+}
+
+li::marker {
+	color: #ae1616;
+	font-size: 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+.globalCard:hover li::marker {
+	color: #67b507;
+}
+
+.courseDetails {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.courseDetails .globalCard {
+	position: relative;
+	width: 60% !important;
+	text-align: start;
+	padding: 50px;
+	color: var(--text-white-800);
+	line-height: 2;
+	height: 100% ;
+}
+
+/* .courseDetails .globalCard:hover .globalCard::after {
+	display: block;
+} */
+
