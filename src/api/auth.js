@@ -1,7 +1,10 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "http://localhost:4000/api",
+    // This reads the live variable from Vercel/Netlify, or falls back to your local port 4000
+    baseURL: import.meta.env.VITE_API_URL
+        ? `${import.meta.env.VITE_API_URL}/api`
+        : "http://localhost:4000/api",
 });
 
 // Attach token automatically
